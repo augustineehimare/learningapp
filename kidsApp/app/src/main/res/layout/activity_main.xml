@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Linearlayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:="@+id/tv_App_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KidsApp"
+        android:gravity="center"
+        android:layout_marginBottom="28dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="welcome"
+                android:textColor="#236CD6"
+                android:textSize="31sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your name required"
+                android:textColor="#9659B2"
+                android:textSize="16sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textColor="#236CD6"
+                    android:textColorHint="#9659B2"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btn_begin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="Begin"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+            </Button>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+</Linearlayout>
